@@ -1,7 +1,10 @@
 package Assignment_june_8
 
 fun main() {
-    val numbers = (1..10).toList()
-    val evenNumbers = numbers.filter { it % 2 == 0 }
-    println("Even numbers from 1 to 10: $evenNumbers")
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    for (even in numbers) {
+        if (even% 2 == 0) {
+            println("The even numbers are $even")
+        }
+    }
 }
